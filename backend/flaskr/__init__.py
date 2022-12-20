@@ -145,7 +145,7 @@ def create_app(test_config=None):
 
         new_question = body.get('question', None)
         new_answer = body.get('answer', None)
-        new_category = body.get('category')
+        new_category = body.get('category', None)
         new_difficulty = body.get('difficulty')
         try:
             question = Question(question=new_question, answer=new_answer, 

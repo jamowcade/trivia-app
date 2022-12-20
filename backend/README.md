@@ -81,18 +81,18 @@ Example response:
  "current_category": null, 
  "questions": [
    {
-     "answer": "Maya Angelou", 
-     "category": 4, 
+     "answer": "blue", 
+     "category": 1, 
      "difficulty": 2, 
-     "id": 5, 
-     "question": "Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
+     "id": 1, 
+     "question": "What is the color of the sky'?"
    },  
    {
-     "answer": "Escher", 
-     "category": 2, 
+     "answer": "history", 
+     "category": 4, 
      "difficulty": 1, 
-     "id": 16, 
-     "question": "Which Dutch graphic artist\u2013initials M C was a creator of optical illusions?"
+     "id": 10, 
+     "question": "what is history"
    }
  ], 
  "success": true, 
@@ -103,7 +103,7 @@ DELETE /questions/<question_id> Delete an existing questions from the repository
 Request arguments: question_id:int
 Example response:
 {
-  "deleted": "28", 
+  "deleted": "10", 
   "success": true
 }
 POST /questions Add a new question to the repository of available questions
@@ -111,7 +111,7 @@ POST /questions Add a new question to the repository of available questions
 Request body: {question:string, answer:string, difficulty:int, category:string}
 Example response:
 {
-  "created": 29, 
+  "created": 11, 
   "success": true
 }
 POST /questions/search Fetches all questions where a substring matches the search term (not case-sensitive)
@@ -122,11 +122,11 @@ Example response:
   "current_category": null, 
   "questions": [
     {
-      "answer": "Lisbon", 
-      "category": 2, 
-      "difficulty": 1, 
-      "id": 29, 
-      "question": "What is the capital of Portugal?"
+      "answer": "color", 
+      "category": 3, 
+      "difficulty": 2, 
+      "id": 1, 
+      "question": "what is the color of the sky?"
     }
   ], 
   "success": true, 
@@ -142,16 +142,16 @@ Example response:
     {
       "answer": "The Liver", 
       "category": 1, 
-      "difficulty": 4, 
-      "id": 20, 
+      "difficulty": 3, 
+      "id": 15, 
       "question": "What is the heaviest organ in the human body?"
     }, 
     {
-      "answer": "Alexander Fleming", 
+      "answer": "Christopher Columbus", 
       "category": 1, 
       "difficulty": 3, 
       "id": 21, 
-      "question": "Who discovered penicillin?"
+      "question": "Who discovered America?"
     }, 
   ], 
   "success": true, 
